@@ -65,16 +65,8 @@ declare const enum MainParticle {
 //% color=#5B9BD5 icon="\uf06e" block="EduTutorialTest"
 namespace EduTutorialTest {
 
-    /**
-     * x秒間、handlerを繰り返し実行します。
-     * 1ループにつき50msだけ待機します。
-     * @param seconds 実行時間（秒）
-     */
-    //% blockId=ett_repeat_for_seconds
     //% block="%seconds びょう くりかえす"
     //% seconds.defl=3
-    //% handlerStatement=1
-    //% weight=90
     export function repeatForSeconds(seconds: number, handler: () => void) {
         // 1秒に20回で繰り返す
         const repeatCount = Math.max(0, seconds * 20);
@@ -84,27 +76,16 @@ namespace EduTutorialTest {
         }
     }
 
-    /**
-     * 指定タイプのすべてのエンティティの位置にパーティクルを出します。
-     */
-    //% blockId=ett_emit_particle_at_projectiles
     //% block="%projectile のところに %particle の パーティクルをだす"
     //% particle.defl=Particle.HeartParticle
     //% projectile.defl=ProjectileEntity.Arrow
-    //% weight=80
     export function emitParticleAtProjectiles(particle: MainParticle, projectile: ProjectileEntity) {
         // それぞれのエンティティの足元でパーティクルを生成
         player.runChatCommand(`execute at @e[type=${projectile}] run particle ${particle} ~ ~ ~`)
     }
 
-    /**
-     * 指定した「投射物を発射するアイテム」を使ったときに発火します。
-     */
-    //% blockId=ett_on_projectile_item_used
     //% block="%item をつかって うちだしたとき"
     //% item.defl=ProjectileItem.Snowball
-    //% draggableParameters=reporter
-    //% weight=85
     export function onProjectileItemUsed(item: ProjectileItem, handler: () => void) {
         const itemEnum = getItemId(item)
         // MakeCodeの標準イベント：プレイヤーが指定アイテムを使用したとき
