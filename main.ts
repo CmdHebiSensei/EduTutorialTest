@@ -74,7 +74,7 @@ declare const enum MainParticle {
     //% jres=Block.SoulCampfire
     BlueFlameParticle,
     //% block="さくもつが そだつときの キラキラ"
-    //% jres=Block.BoneMeal
+    //% jres=Item.BoneMeal
     CropGrowthEmitter,
     //% block="ハート"
     //% jres=Effect.Regeneration
