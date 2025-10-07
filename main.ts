@@ -62,16 +62,22 @@ function getEntityId(entity: ProjectileEntity): number {
 // パーティクル
 declare const enum MainParticle {
     //% block="こうかつきの矢の もやもや"
+    //% jres=Item.Arrow
     ArrowSpellEmitter,
     //% block="ふうせんの キラキラ"
+    //% jres=Item.WhiteBalloon
     BalloonGasParticle,
     //% block="ひのこ"
+    //% jres=Block.Campfire
     BasicFlameParticle,
     //% block="あおい ひのこ"
+    //% jres=Block.SoulCampfire
     BlueFlameParticle,
     //% block="さくもつが そだつときの キラキラ"
+    //% jres=Block.BoneMeal
     CropGrowthEmitter,
     //% block="ハート"
+    //% jres=Effect.Regeneration
     HeartParticle,
 }
 
