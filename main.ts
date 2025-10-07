@@ -66,8 +66,8 @@ declare const enum MainParticle {
 namespace EduTutorialTest {
 
     //% block="%seconds びょう くりかえす"
-    //% seconds.defl=3
     //% handlerstatement=1
+    //% seconds.defl=3
     export function repeatForSeconds(seconds: number, handler: () => void) {
         // 1秒に20回で繰り返す
         const repeatCount = Math.max(0, seconds * 20);
