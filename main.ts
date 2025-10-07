@@ -78,8 +78,8 @@ namespace EduTutorialTest {
     }
 
     //% block="%projectile のところに %particle の パーティクルをだす"
-    //% particle.defl=MainParticle.HeartParticle
     //% projectile.defl=ProjectileEntity.Arrow
+    //% particle.defl=MainParticle.HeartParticle
     export function emitParticleAtProjectiles(particle: MainParticle, projectile: ProjectileEntity) {
         // それぞれのエンティティの足元でパーティクルを生成
         player.runChatCommand(`execute at @e[type=${projectile}] run particle ${particle} ~ ~ ~`)
