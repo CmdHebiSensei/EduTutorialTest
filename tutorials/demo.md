@@ -2,7 +2,7 @@
 ### @flyoutOnly true
 ### @explicitHints true
 
-# EduTutorialTest: ほのおの矢をうってみよう！
+# EduTutorialTest
 
 ## Step 1
 
