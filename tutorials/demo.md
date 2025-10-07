@@ -14,6 +14,7 @@
 EduTutorialTest.repeatForSeconds(3, function () {
     player.say("go!")
 })
+```
 
 ## Step 2: 矢のところにほのおを出そう
 
