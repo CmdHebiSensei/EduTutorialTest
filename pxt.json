@@ -1,5 +1,5 @@
 {
-    "name": "EduTutorialTest",
+    "name": "edu-tutorial-test",
     "description": "Custom Blocks + tutorial for Minecraft MakeCode",
     "version": "0.0.1",
     "dependencies": {
