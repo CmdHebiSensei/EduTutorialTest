@@ -47,14 +47,14 @@ declare const enum ProjectileEntity {
 }
 
 // entity => id
-function getEntityId(entity: ProjectileEntity): string {
+function getEntityId(entity: ProjectileEntity): number {
     switch (entity) {
-        case ProjectileEntity.Arrow: return "minecraft:arrow";
-        case ProjectileEntity.Snowball: return "minecraft:snowball";
-        case ProjectileEntity.Trident: return "minecraft:thrown_trident";
-        case ProjectileEntity.WindCharge: return "minecraft:wind_charge_projectile";
-        case ProjectileEntity.Egg: return "minecraft:egg";
-        case ProjectileEntity.Potion: return "minecraft:splash_potion";
+        case ProjectileEntity.Arrow: return ProjectileMob.Arrow;
+        case ProjectileEntity.Snowball: return ProjectileMob.Snowball;
+        case ProjectileEntity.Trident: return 73;
+        case ProjectileEntity.WindCharge: return 143;
+        case ProjectileEntity.Egg: return ProjectileMob.Egg;
+        case ProjectileEntity.Potion: return ProjectileMob.SplashPotion;
         default: throw `Unrecognized ProjectileEntity enum value: ${entity}`
     }
 }
@@ -109,7 +109,7 @@ namespace EduTutorialTest {
     export function emitParticleAtProjectiles(projectile: ProjectileEntity, particle: MainParticle) {
         // それぞれのエンティティの足元でパーティクルを生成
         mobs.execute(
-            mobs.entitiesByType(PIG),
+            mobs.entitiesByType(getEntityId(projectile)),
             pos(0, 0, 0),
             `particle ${getParticleId(particle)} ~ ~ ~`
         )
