@@ -8,7 +8,7 @@
 
 3秒間だけ「go!」と言わせてみよう。
 
-```blocks
+```block
 EduTutorialTest.repeatForSeconds(3, function () {
     player.say("go!")
 })
@@ -18,7 +18,7 @@ EduTutorialTest.repeatForSeconds(3, function () {
 
 矢のところにほのおを出そう。
 
-```blocks
+```block
 EduTutorialTest.emitParticleAtProjectiles(Particle.BasicFlameParticle, ProjectileEntity.Arrow)
 ```
 
@@ -26,7 +26,7 @@ EduTutorialTest.emitParticleAtProjectiles(Particle.BasicFlameParticle, Projectil
 
 雪玉をなげたら「なげた！」と言うようにしよう。
 
-```blocks
+```block
 EduTutorialTest.onProjectileItemUsed(ProjectileItem.Snowball, function () {
     player.say("なげた！")
 })
@@ -36,7 +36,7 @@ EduTutorialTest.onProjectileItemUsed(ProjectileItem.Snowball, function () {
 
 ゆみで やを うったら 2びょうだけ やのばしょに ほのおを出そう。
 
-```blocks
+```block
 EduTutorialTest.onProjectileItemUsed(ProjectileItem.Bow, function () {
     EduTutorialTest.repeatForSeconds(2, function () {
         EduTutorialTest.emitParticleAtProjectiles(Particle.BasicFlameParticle, ProjectileEntity.Arrow)
