@@ -1,4 +1,4 @@
-### @hideIteration true
+### @hideIteration false
 ### @flyoutOnly true
 ### @explicitHints true
 
