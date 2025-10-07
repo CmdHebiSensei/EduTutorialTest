@@ -91,7 +91,7 @@ function getParticleId(particle: MainParticle): string {
 //% color=#5B9BD5 icon="\uf06e" block="EduTutorialTest"
 namespace EduTutorialTest {
 
-    //% icon="\uf140" block="%seconds びょう くりかえす"
+    //% block="♻ %seconds びょう くりかえす"
     //% handlerStatement=1
     //% seconds.defl=3
     export function repeatForSeconds(seconds: number, handler: () => void) {
