@@ -19,7 +19,7 @@ EduTutorialTest.repeatForSeconds(3, function () {
 矢のところにほのおを出そう。
 
 ```block
-EduTutorialTest.emitParticleAtProjectiles(ProjectileEntity.Arrow, Particle.BasicFlameParticle)
+EduTutorialTest.emitParticleAtProjectiles(ProjectileEntity.Arrow, MainParticle.BasicFlameParticle)
 ```
 
 ## Step 3
@@ -39,7 +39,7 @@ EduTutorialTest.onProjectileItemUsed(ProjectileItem.Snowball, function () {
 ```block
 EduTutorialTest.onProjectileItemUsed(ProjectileItem.Bow, function () {
     EduTutorialTest.repeatForSeconds(2, function () {
-        EduTutorialTest.emitParticleAtProjectiles(ProjectileEntity.Arrow, Particle.BasicFlameParticle)
+        EduTutorialTest.emitParticleAtProjectiles(ProjectileEntity.Arrow, MainParticle.BasicFlameParticle)
     })
 })
 ```
