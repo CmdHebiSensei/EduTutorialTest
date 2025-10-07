@@ -8,6 +8,7 @@
     },
     "files": [
         "main.ts",
+        "extension.blocks",
         "README.md",
         "tutorials/demo.md",
         "tutorials/demo2.md",

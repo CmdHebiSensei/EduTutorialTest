@@ -1,0 +1,8 @@
+<block type="hebi_custom_block">
+    <icon src="icon.png" width="40" height="40"></icon>
+    <value name="TEXT">
+        <shadow type="text">
+            <field name="TEXT">Hello</field>
+        </shadow>
+    </value>
+</block>

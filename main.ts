@@ -91,7 +91,7 @@ function getParticleId(particle: MainParticle): string {
 //% color=#5B9BD5 icon="\uf06e" block="EduTutorialTest"
 namespace EduTutorialTest {
 
-    //% block="♻ %seconds びょう くりかえす"
+    //% blockId=hebi_custom_block block="♻%seconds びょう くりかえす"
     //% handlerStatement=1
     //% seconds.defl=3
     export function repeatForSeconds(seconds: number, handler: () => void) {
