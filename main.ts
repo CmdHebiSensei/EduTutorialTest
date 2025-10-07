@@ -1,4 +1,11 @@
 // 投射物
+declare const enum Dummy {
+    //% block="風船"
+    //% jres=Item.WhiteBalloon
+    Balloon,
+}
+
+// 投射物
 declare const enum ProjectileItem {
     //% block="弓"
     Bow,
@@ -97,11 +104,12 @@ function getParticleId(particle: MainParticle): string {
 //% color=#5B9BD5 icon="\uf06e" block="EduTutorialTest"
 namespace EduTutorialTest {
 
-    //% block="🌷🔶%seconds びょう くりかえす"
+    //% block="%dummy%seconds びょう くりかえす"
     //% jres=Item.Clock
     //% handlerStatement=1
+    //% dummy.defl=Dummy.Balloon
     //% seconds.defl=3
-    export function repeatForSeconds(seconds: number, handler: () => void) {
+    export function repeatForSeconds(dummy: Dummy ,seconds: number, handler: () => void) {
         const start = gameplay.timeQuery(GAME_TIME);
         const duration = Math.max(0, seconds * 20);
         while (gameplay.timeQuery(GAME_TIME) - start < duration) {
