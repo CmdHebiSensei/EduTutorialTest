@@ -10,16 +10,10 @@
 
 `%seconds びょう くりかえす` ブロックで、3秒間だけ「go!」と言わせてみよう。
 
-```template
-```
-
 ```blocks
 EduTutorialTest.repeatForSeconds(3, function () {
     player.say("go!")
 })
-
-```ghost
-```
 
 ## Step 2: 矢のところにほのおを出そう
 
@@ -27,9 +21,6 @@ EduTutorialTest.repeatForSeconds(3, function () {
 
 ```blocks
 EduTutorialTest.emitParticleAtProjectiles(Particle.BasicFlameParticle, ProjectileEntity.Arrow)
-```
-
-```ghost
 ```
 
 ## Step 3: はっしゃアイテムを使ったらはんのう
@@ -42,9 +33,6 @@ EduTutorialTest.onProjectileItemUsed(ProjectileItem.Snowball, function () {
 })
 ```
 
-```ghost
-```
-
 ## Step 4: くみあわせてみよう。
 
 ゆみで やを うったら 2びょうだけ やのばしょに ほのおを出そう。
@@ -55,7 +43,4 @@ EduTutorialTest.onProjectileItemUsed(ProjectileItem.Bow, function () {
         EduTutorialTest.emitParticleAtProjectiles(Particle.BasicFlameParticle, ProjectileEntity.Arrow)
     })
 })
-```
-
-```ghost
 ```
