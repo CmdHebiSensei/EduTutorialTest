@@ -1,0 +1,13 @@
+{
+    "name": "EduTutorialTest",
+    "description": "Custom Blocks + tutorial for Minecraft MakeCode",
+    "version": "0.0.1",
+    "dependencies": {
+        "minecraft": "*"
+    },
+    "files": ["main.ts"],
+    "preferredEditor": "blocksprj",
+    "public": true,
+    "icon": "icon.png",
+    "supportedTargets": ["minecraft"]
+}
