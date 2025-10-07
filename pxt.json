@@ -6,7 +6,10 @@
         "core": "*",
         "builder": "*"
     },
-    "files": ["main.ts"],
+    "files": [
+        "main.ts"
+    ],
+    "testFiles": [],
     "targetVersions": {
         "target": "1.6.27",
         "targetId": "minecraft"
@@ -14,7 +17,5 @@
     "supportedTargets": [
         "minecraft"
     ],
-    "preferredEditor": "tsprj",
-    "public": true,
-    "icon": "icon.png"
+    "preferredEditor": "tsprj"
 }
