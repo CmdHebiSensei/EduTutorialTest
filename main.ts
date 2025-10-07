@@ -95,11 +95,11 @@ namespace EduTutorialTest {
     //% handlerStatement=1
     //% seconds.defl=3
     export function repeatForSeconds(seconds: number, handler: () => void) {
-        // 1秒に20回で繰り返す
-        const repeatCount = Math.max(0, seconds * 20);
-        for (let i = 0; i < repeatCount; i++) {
+        a = gameplay.timeQuery(GAME_TIME);
+        a += Math.max(0, seconds) * 20;
+        while (gameplay.timeQuery(GAME_TIME) < a) {
             handler();
-            loops.pause(50);
+            loops.pause(1);
         }
     }
 
