@@ -4,11 +4,11 @@
 ### @flyoutOnly true
 ### @explicitHints true
 
-# EduTutorialTest: ほのおの矢をうってみよう！
+# EduTutorialTest
 
-## Step 1: xびょう くりかえす
+## Step 1
 
-`%seconds びょう くりかえす` ブロックで、3秒間だけ「go!」と言わせてみよう。
+「go!」と言わせてみよう。
 
 ```blocks
 player.say("go!")
