@@ -107,7 +107,9 @@ namespace EduTutorialTest {
     //% particle.defl=MainParticle.HeartParticle
     export function emitParticleAtProjectiles(projectile: ProjectileEntity, particle: MainParticle) {
         // それぞれのエンティティの足元でパーティクルを生成
-        player.say(`say execute at @e[type=${getEntityId(projectile)}] run particle ${getParticleId(particle)} ~ ~ ~`)
+        player.say(`aaaaa`)
+        player.say(`execute at @e[type=${getEntityId(projectile)}] run particle ${getParticleId(particle)} ~ ~ ~`)
+        player.runChatCommand(`execute at @e[type=${getEntityId(projectile)}] run particle ${getParticleId(particle)} ~ ~ ~`)
         // player.runChatCommand(`/say execute at @e[type=${getEntityId(projectile)}] run particle ${getParticleId(particle)} ~ ~ ~`)
     }
 
