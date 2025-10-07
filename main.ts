@@ -104,7 +104,7 @@ function getParticleId(particle: MainParticle): string {
 //% color=#5B9BD5 icon="\uf06e" block="EduTutorialTest"
 namespace EduTutorialTest {
 
-    //% block="%dummy%seconds びょう くりかえす"
+    //% block="%dummy %seconds びょう くりかえす"
     //% jres=Item.Clock
     //% handlerStatement=1
     //% dummy.defl=Dummy.Balloon
