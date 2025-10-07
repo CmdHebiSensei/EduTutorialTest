@@ -4,7 +4,7 @@
 
 # EduTutorialTest: ほのおの矢をうってみよう！
 
-## Step 1: xびょう くりかえす
+## Step 1
 
 `%seconds びょう くりかえす` ブロックで、3秒間だけ「go!」と言わせてみよう。
 
@@ -17,7 +17,7 @@ EduTutorialTest.repeatForSeconds(3, function () {
 })
 ```
 
-## Step 2: 矢のところにほのおを出そう
+## Step 2
 
 `%projectile のところに %particle の パーティクルをだす` を使って、矢のところにほのおを出そう。
 
@@ -28,7 +28,7 @@ EduTutorialTest.repeatForSeconds(3, function () {
 EduTutorialTest.emitParticleAtProjectiles(Particle.BasicFlameParticle, ProjectileEntity.Arrow)
 ```
 
-## Step 3: はっしゃアイテムを使ったらはんのう
+## Step 3
 
 `%item をつかって うちだしたとき` を使って、雪玉をなげたら「なげた！」と言うようにしよう。
 
@@ -41,7 +41,7 @@ EduTutorialTest.onProjectileItemUsed(ProjectileItem.Snowball, function () {
 })
 ```
 
-## Step 4: くみあわせてみよう。
+## Step 4
 
 ゆみで やを うったら 2びょうだけ やのばしょに ほのおを出そう。
 
