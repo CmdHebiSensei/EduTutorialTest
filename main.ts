@@ -87,6 +87,7 @@ function getParticleId(particle: MainParticle): string {
         default: throw `Unrecognized MainParticle enum value: ${particle}`
     }
 }
+
 //% color=#5B9BD5 icon="\uf06e" block="EduTutorialTest"
 namespace EduTutorialTest {
 
@@ -107,10 +108,11 @@ namespace EduTutorialTest {
     //% particle.defl=MainParticle.HeartParticle
     export function emitParticleAtProjectiles(projectile: ProjectileEntity, particle: MainParticle) {
         // それぞれのエンティティの足元でパーティクルを生成
-        player.say(`aaaaa`);
-        player.say(`execute at @e[type=${getEntityId(projectile)}] run particle ${getParticleId(particle)} ~ ~ ~`);
-        player.runChatCommand(`execute at @e[type=${getEntityId(projectile)}] run particle ${getParticleId(particle)} ~ ~ ~`);
-        // player.runChatCommand(`/say execute at @e[type=${getEntityId(projectile)}] run particle ${getParticleId(particle)} ~ ~ ~`)
+        mobs.execute(
+            mobs.entitiesByType(PIG),
+            pos(0, 0, 0),
+            `particle ${getParticleId(particle)} ~ ~ ~`
+        )
     }
 
     //% block="%item をつかって うちだしたとき"
