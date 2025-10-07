@@ -96,7 +96,7 @@ namespace EduTutorialTest {
     //% seconds.defl=3
     export function repeatForSeconds(seconds: number, handler: () => void) {
         a = gameplay.timeQuery(GAME_TIME);
-        a += Math.max(0, seconds) * 20;
+        a += Math.max(0, seconds * 20);
         while (gameplay.timeQuery(GAME_TIME) < a) {
             handler();
             loops.pause(1);
