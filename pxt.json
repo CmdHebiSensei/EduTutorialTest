@@ -1,7 +1,7 @@
 {
     "name": "Education Tutorial Test",
-    "description": "Custom Blocks + tutorial for Minecraft MakeCode",
     "version": "0.0.1",
+    "description": "Custom Blocks + tutorial for Minecraft MakeCode",
     "dependencies": {
         "core": "*",
         "builder": "*"
@@ -11,7 +11,7 @@
     ],
     "testFiles": [],
     "targetVersions": {
-        "target": "1.6.27",
+        "target": "2.0.37",
         "targetId": "minecraft"
     },
     "supportedTargets": [
