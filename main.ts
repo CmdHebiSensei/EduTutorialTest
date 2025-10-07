@@ -1,33 +1,33 @@
 // 投射物
-enum ProjectileItem {
+declare const enum ProjectileItem {
     //% block="弓"
-    Bow = "minecraft:bow",
+    Bow,
     //% block="クロスボウ"
-    Crossbow = "minecraft:crossbow",
+    Crossbow,
     //% block="雪玉"
-    Snowball = "minecraft:snowball",
+    Snowball,
     //% block="トライデント"
-    Trident = "minecraft:trident",
+    Trident,
     //% block="ウィンドチャージ"
-    WindCharge = "minecraft:wind_charge",
+    WindCharge,
     //% block="卵"
-    Egg = "minecraft:egg",
+    Egg,
     //% block="ポーション"
-    Potion = "minecraft:potion"
+    Potion
 }
 
 // itemId => enum
-function getItemEnumFromId(id: string): number {
-    const map: Record<string, number> = {
-        "minecraft:bow": BOW,
-        "minecraft:crossbow": CROSSBOW,
-        "minecraft:snowball": SNOWBALL,
-        "minecraft:trident": TRIDENT,
-        "minecraft:wind_charge": WIND_CHARGE,
-        "minecraft:egg": EGG,
-        "minecraft:potion": POTION
+function getItemId(item: ProjectileItem): number {
+    switch (item) {
+        case ProjectileItem.Bow: return Item.Bow;
+        case ProjectileItem.Crossbow: return 471;
+        case ProjectileItem.Snowball: return Item.Snowball;
+        case ProjectileItem.Trident: return Item.Trident;
+        case ProjectileItem.WindCharge: return Item.WindCharge;
+        case ProjectileItem.Egg: return Item.Egg;
+        case ProjectileItem.Potion: return 373;
+        default: throw `Unrecognized ProjectileItem enum value: ${item}`
     }
-    return map[id] ?? -1
 }
 
 // 飛翔物
@@ -47,7 +47,7 @@ enum ProjectileEntity {
 }
 
 // パーティクル
-enum Particle {
+declare const enum MainParticle {
     //% block="こうかつきの矢の もやもや"
     ArrowSpellEmitter = "minecraft:arrow_spell_emitter",
     //% block="ふうせんの キラキラ"
@@ -76,8 +76,9 @@ namespace EduTutorialTest {
     //% handlerStatement=1
     //% weight=90
     export function repeatForSeconds(seconds: number, handler: () => void) {
-        const end = control.millis() + Math.max(0, seconds) * 1000
-        while (control.millis() < end) {
+        // 1秒に20回で繰り返す
+        const repeatCount = Math.max(0, seconds * 20);
+        for (let i = 0; i < repeatCount; i++) {
             handler()
             loops.pause(50)
         }
@@ -91,9 +92,9 @@ namespace EduTutorialTest {
     //% particle.defl=Particle.HeartParticle
     //% projectile.defl=ProjectileEntity.Arrow
     //% weight=80
-    export function emitParticleAtProjectiles(particle: Particle, projectile: ProjectileEntity) {
+    export function emitParticleAtProjectiles(particle: MainParticle, projectile: ProjectileEntity) {
         // それぞれのエンティティの足元でパーティクルを生成
-        commands.run(`execute at @e[type=${projectile}] run particle ${particle} ~ ~ ~`)
+        player.runChatCommand(`execute at @e[type=${projectile}] run particle ${particle} ~ ~ ~`)
     }
 
     /**
@@ -105,7 +106,7 @@ namespace EduTutorialTest {
     //% draggableParameters=reporter
     //% weight=85
     export function onProjectileItemUsed(item: ProjectileItem, handler: () => void) {
-        const itemEnum = getItemEnumFromId(item)
+        const itemEnum = getItemId(item)
         // MakeCodeの標準イベント：プレイヤーが指定アイテムを使用したとき
         if (itemEnum >= 0) player.onItemInteracted(itemEnum, handler)
     }
