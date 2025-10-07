@@ -77,7 +77,7 @@ namespace EduTutorialTest {
     }
 
     //% block="%projectile のところに %particle の パーティクルをだす"
-    //% particle.defl=Particle.HeartParticle
+    //% particle.defl=MainParticle.HeartParticle
     //% projectile.defl=ProjectileEntity.Arrow
     export function emitParticleAtProjectiles(particle: MainParticle, projectile: ProjectileEntity) {
         // それぞれのエンティティの足元でパーティクルを生成
