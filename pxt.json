@@ -1,6 +1,6 @@
 {
     "name": "Education Tutorial Test",
-    "version": "0.0.7",
+    "version": "0.0.8",
     "description": "Custom Blocks + tutorial for Minecraft MakeCode",
     "dependencies": {
         "core": "*",
@@ -14,7 +14,8 @@
         "tutorials/demo3.md",
         "tutorials/demo4.md",
         "tutorials/demo5.md",
-        "tutorials/demo6.md"
+        "tutorials/demo6.md",
+        "tutorials/demo7.md"
     ],
     "testFiles": [],
     "targetVersions": {
