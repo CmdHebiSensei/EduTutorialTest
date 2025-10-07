@@ -52,7 +52,7 @@ EduTutorialTest.onProjectileItemUsed(ProjectileItem.Snowball, function () {
 ```blocks
 EduTutorialTest.onProjectileItemUsed(ProjectileItem.Bow, function () {
     EduTutorialTest.repeatForSeconds(2, function () {
-        EduTutorialTest.emitParitlceAtProjectiles(Particle.BasicFlameParticle, ProjectileEntity.Arrow)
+        EduTutorialTest.emitParticleAtProjectiles(Particle.BasicFlameParticle, ProjectileEntity.Arrow)
     })
 })
 ```

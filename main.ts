@@ -87,7 +87,7 @@ namespace EduTutorialTest {
      * 指定タイプのすべてのエンティティの位置にパーティクルを出します。
      */
     //% blockId=ett_emit_particle_at_projectiles
-    //% block="%type のところに %particleId の パーティクルをだす"
+    //% block="%projectile のところに %particle の パーティクルをだす"
     //% particle.defl=Particle.HeartParticle
     //% projectile.defl=ProjectileEntity.Arrow
     //% weight=80
