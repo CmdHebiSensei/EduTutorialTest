@@ -6,7 +6,7 @@
 
 ## Step 1
 
-`%seconds びょう くりかえす` ブロックで、3秒間だけ「go!」と言わせてみよう。
+3秒間だけ「go!」と言わせてみよう。
 
 ```blocks
 EduTutorialTest.repeatForSeconds(3, function () {
@@ -16,7 +16,7 @@ EduTutorialTest.repeatForSeconds(3, function () {
 
 ## Step 2
 
-`%projectile のところに %particle の パーティクルをだす` を使って、矢のところにほのおを出そう。
+矢のところにほのおを出そう。
 
 ```blocks
 EduTutorialTest.emitParticleAtProjectiles(Particle.BasicFlameParticle, ProjectileEntity.Arrow)
@@ -24,7 +24,7 @@ EduTutorialTest.emitParticleAtProjectiles(Particle.BasicFlameParticle, Projectil
 
 ## Step 3
 
-`%item をつかって うちだしたとき` を使って、雪玉をなげたら「なげた！」と言うようにしよう。
+雪玉をなげたら「なげた！」と言うようにしよう。
 
 ```blocks
 EduTutorialTest.onProjectileItemUsed(ProjectileItem.Snowball, function () {
