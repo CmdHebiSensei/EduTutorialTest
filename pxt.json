@@ -1,6 +1,6 @@
 {
     "name": "Education Tutorial Test",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "Custom Blocks + tutorial for Minecraft MakeCode",
     "dependencies": {
         "core": "*",
@@ -19,5 +19,6 @@
     "supportedTargets": [
         "minecraft"
     ],
-    "preferredEditor": "tsprj"
+    "preferredEditor": "tsprj",
+    "icon": "icon.png"
 }
