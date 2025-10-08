@@ -12,7 +12,8 @@
         "README.md",
         "tutorials/demo.md",
         "tutorials/demo2.md",
-        "tutorials/demo3.md"
+        "tutorials/demo3.md",
+        "tutorials/demo4.md"
     ],
     "testFiles": [],
     "targetVersions": {
