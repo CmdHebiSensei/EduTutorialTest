@@ -14,6 +14,10 @@ EduTutorialTest.repeatForSeconds(3, function () {
 })
 ```
 
+```ghost
+EduTutorialTest.hello(Dummy.Dummy)
+```
+
 ## Step 2
 
 矢のところにほのおを出そう。
