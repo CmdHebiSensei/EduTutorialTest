@@ -8,6 +8,7 @@
     },
     "files": [
         "main.ts",
+        "icons.jres",
         "README.md",
         "tutorials/demo.md"
     ],

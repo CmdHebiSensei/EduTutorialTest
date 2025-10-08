@@ -1,3 +1,9 @@
+// dummy
+declare const enum Dummy {
+    //% jres=CmdHebi
+    Dummy
+}
+
 // 投射物
 declare const enum ProjectileItem {
     //% block="弓"
@@ -97,8 +103,13 @@ function getParticleId(particle: MainParticle): string {
 //% color=#5B9BD5 icon="\uf06e" block="サンプル"
 namespace EduTutorialTest {
 
+    //% block="%dummy こんにちは！"
+    //% dummy.defl=Dummy.Dummy
+    export function hello(dummy: Dummy) {
+
+    }
+
     //% block="⏰ %seconds びょう くりかえす"
-    //% jres=Item.Clock
     //% handlerStatement=1
     //% seconds.defl=3
     export function repeatForSeconds(seconds: number, handler: () => void) {
