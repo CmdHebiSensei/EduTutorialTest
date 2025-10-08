@@ -1,7 +1,8 @@
 // 投射物
 declare const enum Dummy {
     //% block="🔥"
-    Balloon,
+    //% jres=Item.WhiteBalloon
+    Balloon = 0,
 }
 
 // 投射物
@@ -107,6 +108,8 @@ namespace EduTutorialTest {
     //% jres=Item.Clock
     //% handlerStatement=1
     //% dummy.defl=Dummy.Balloon
+    //% dummy.fieldEditor="note"
+    //% dummy.fieldOptions.decompileLiterals=true
     //% seconds.defl=3
     export function repeatForSeconds(dummy: Dummy ,seconds: number, handler: () => void) {
         const start = gameplay.timeQuery(GAME_TIME);
