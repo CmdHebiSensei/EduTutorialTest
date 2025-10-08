@@ -1,11 +1,4 @@
 // 投射物
-declare const enum Dummy {
-    //% block="🔥"
-    //% jres=Item.WhiteBalloon
-    Balloon = 0,
-}
-
-// 投射物
 declare const enum ProjectileItem {
     //% block="弓"
     Bow,
@@ -104,7 +97,7 @@ function getParticleId(particle: MainParticle): string {
 //% color=#5B9BD5 icon="\uf06e" block="EduTutorialTest"
 namespace EduTutorialTest {
 
-    //% block="🔁 %seconds びょう くりかえす"
+    //% block="⏰ %seconds びょう くりかえす"
     //% jres=Item.Clock
     //% handlerStatement=1
     //% seconds.defl=3
