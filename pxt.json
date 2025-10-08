@@ -8,9 +8,8 @@
     },
     "files": [
         "main.ts",
-        "extension.blocks",
         "README.md",
-        "tutorials/demo8.md"
+        "tutorials/demo.md"
     ],
     "testFiles": [],
     "targetVersions": {
