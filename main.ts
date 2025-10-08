@@ -104,13 +104,11 @@ function getParticleId(particle: MainParticle): string {
 //% color=#5B9BD5 icon="\uf06e" block="EduTutorialTest"
 namespace EduTutorialTest {
 
-    //% block="%dummy %seconds びょう くりかえす"
+    //% block="🔁 %seconds びょう くりかえす"
     //% jres=Item.Clock
     //% handlerStatement=1
-    //% dummy.defl=Dummy.Balloon
-    //% dummy.fieldOptions.decompileLiterals=true
     //% seconds.defl=3
-    export function repeatForSeconds(dummy: Dummy ,seconds: number, handler: () => void) {
+    export function repeatForSeconds(seconds: number, handler: () => void) {
         const start = gameplay.timeQuery(GAME_TIME);
         const duration = Math.max(0, seconds * 20);
         while (gameplay.timeQuery(GAME_TIME) - start < duration) {
@@ -119,7 +117,7 @@ namespace EduTutorialTest {
         }
     }
 
-    //% block="%projectile のところに %particle の パーティクルをだす"
+    //% block="✨ %projectile のところに %particle の パーティクルをだす"
     //% projectile.defl=ProjectileEntity.Arrow
     //% particle.defl=MainParticle.HeartParticle
     export function emitParticleAtProjectiles(projectile: ProjectileEntity, particle: MainParticle) {
@@ -131,7 +129,7 @@ namespace EduTutorialTest {
         )
     }
 
-    //% block="%item をつかって うちだしたとき"
+    //% block="🏹 %item をつかって うちだしたとき"
     //% item.defl=ProjectileItem.Snowball
     export function onProjectileItemUsed(item: ProjectileItem, handler: () => void) {
         // MakeCodeの標準イベント：プレイヤーが指定アイテムを使用したとき
