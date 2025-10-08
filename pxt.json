@@ -11,7 +11,8 @@
         "icons.jres",
         "README.md",
         "tutorials/demo.md",
-        "tutorials/demo2.md"
+        "tutorials/demo2.md",
+        "tutorials/demo3.md"
     ],
     "testFiles": [],
     "targetVersions": {
