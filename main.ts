@@ -94,7 +94,7 @@ function getParticleId(particle: MainParticle): string {
     }
 }
 
-//% color=#5B9BD5 icon="\uf06e" block="EduTutorialTest"
+//% color=#5B9BD5 icon="\uf06e" block="サンプル"
 namespace EduTutorialTest {
 
     //% block="⏰ %seconds びょう くりかえす"
