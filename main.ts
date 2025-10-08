@@ -103,6 +103,12 @@ function getParticleId(particle: MainParticle): string {
 //% color=#5B9BD5 icon="\uf06e" block="サンプル"
 namespace EduTutorialTest {
 
+    //% block="こんばんは！"
+    //% jres=Icon.CmdHebi
+    export function goodEvening() {
+
+    }
+
     //% block="%dummy こんにちは！"
     //% dummy.defl=Dummy.Dummy
     export function hello(dummy: Dummy) {

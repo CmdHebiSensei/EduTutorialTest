@@ -15,6 +15,7 @@ EduTutorialTest.repeatForSeconds(3, function () {
 ```
 
 ```ghost
+EduTutorialTest.goodEvening()
 EduTutorialTest.hello(Dummy.Dummy)
 ```
 
