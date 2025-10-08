@@ -1,6 +1,6 @@
 // dummy
 declare const enum Dummy {
-    //% jres=CmdHebi
+    //% jres=Block.Torch
     Dummy
 }
 
