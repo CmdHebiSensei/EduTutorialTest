@@ -108,7 +108,6 @@ namespace EduTutorialTest {
     //% jres=Item.Clock
     //% handlerStatement=1
     //% dummy.defl=Dummy.Balloon
-    //% dummy.fieldEditor="note"
     //% dummy.fieldOptions.decompileLiterals=true
     //% seconds.defl=3
     export function repeatForSeconds(dummy: Dummy ,seconds: number, handler: () => void) {
