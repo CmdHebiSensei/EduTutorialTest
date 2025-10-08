@@ -1,0 +1,25 @@
+{
+    "name": "edututorialtest-tutorials-demo3",
+    "dependencies": {
+        "core": "*",
+        "builder": "*",
+        "edututorialtest": "github:cmdhebisensei/edututorialtest"
+    },
+    "files": [
+        "md",
+        "main.blocks",
+        "main.ts",
+        "README.md"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "targetVersions": {
+        "target": "2.0.37",
+        "targetId": "minecraft"
+    },
+    "supportedTargets": [
+        "minecraft"
+    ],
+    "preferredEditor": "blocksprj"
+}
