@@ -110,7 +110,8 @@ namespace EduTutorialTest {
         }
     }
 
-    //% block="✨ %projectile のところに\n %particle の パーティクルをだす"
+    //% block="✨ %projectile のところに %particle の パーティクルをだす"]
+    //% blockExternalInputs=true
     //% projectile.defl=ProjectileEntity.Arrow
     //% particle.defl=MainParticle.HeartParticle
     export function emitParticleAtProjectiles(projectile: ProjectileEntity, particle: MainParticle) {
