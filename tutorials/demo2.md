@@ -2,7 +2,7 @@
 ### @flyoutOnly true
 ### @explicitHints true
 
-# EduTutorialTest
+# サンプル
 
 ## Step 1
 
